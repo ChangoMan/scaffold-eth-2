@@ -46,5 +46,21 @@ export const getMetadata = ({
     icons: {
       icon: [{ url: "/favicon.png", sizes: "32x32", type: "image/png" }],
     },
+    other: {
+      "fc:miniapp": JSON.stringify({
+        version: "next",
+        imageUrl,
+        button: {
+          title,
+          action: {
+            type: "launch_miniapp",
+            name: title,
+            url: baseUrl,
+            splashImageUrl: `https://yoink.party/logo.png`,
+            splashBackgroundColor: "#000000",
+          },
+        },
+      }),
+    },
   };
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { sdk } from "@farcaster/miniapp-sdk";
 import { RainbowKitProvider, darkTheme, lightTheme } from "@rainbow-me/rainbowkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
@@ -40,6 +41,7 @@ export const ScaffoldEthAppWithProviders = ({ children }: { children: React.Reac
 
   useEffect(() => {
     setMounted(true);
+    sdk.actions.ready();
   }, []);
 
   return (
