@@ -9,7 +9,7 @@
   },
   "miniapp": {
     "version": "1",
-    "name": "Scaffold-ETH 2",
+    "name": "Scaffold-ETH",
     "homeUrl": "https://scaffoldeth.io/",
     "iconUrl": "https://scaffoldeth.io/logo.svg",
     "splashImageUrl": "https://yoink.party/logo.png",
