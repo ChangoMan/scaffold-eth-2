@@ -8,7 +8,7 @@ const titleTemplate = "%s | Scaffold-ETH 2";
 export const getMetadata = ({
   title,
   description,
-  imageRelativePath = "/thumbnail.jpg",
+  imageRelativePath = "/opengraph-image.png",
 }: {
   title: string;
   description: string;
@@ -56,8 +56,8 @@ export const getMetadata = ({
             type: "launch_miniapp",
             name: title,
             url: baseUrl,
-            splashImageUrl: `https://yoink.party/logo.png`,
-            splashBackgroundColor: "#000000",
+            splashImageUrl: `${baseUrl}/splash.png`,
+            splashBackgroundColor: "#ffffff",
           },
         },
       }),
